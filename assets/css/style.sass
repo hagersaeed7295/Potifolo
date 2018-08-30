@@ -1,0 +1,63 @@
+*, *::before, *::after
+  box-sizing: border-box
+
+
+// @import "0-plugins/dir_plugins.sass"
+
+@import "1-base/dir_base.sass"
+
+@import "2-modules/dir_modules.sass"
+
+// @import "3-layouts/dir_layouts.sass"
+
+a
+  text-decoration: none
+  cursor: pointer
+  &:hover, &:focus, &:visited
+    text-decoration: none
+h1, h2, h3, h4, h5, h6
+  margin-bottom: .5rem
+  font-family: inherit
+  font-weight: 500
+  line-height: 1.2
+  color: inherit
+p, ol, ul, dl
+  margin-top: 0
+  margin-bottom: 1rem
+
+
+body
+  overflow-x: hidden !important
+  margin: 0px
+  padding: 0px
+  position: relative
+  z-index: 1
+  font-family: $main-font-light
+  font-size: 14px
+  color: $font-color
+  background-color: $white-color
+  line-height: 1.9
+  font-weight: 300
+
+
+
+
+body
+  &::-webkit-scrollbar
+    width: 0.6em
+    background-color: #fff
+  &::-webkit-scrollbar-track
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4)
+  &::-webkit-scrollbar-thumb
+    background-color: #2b3643
+    background-color:  $basic-red-color
+    outline: 1px solid rgba(#f2672a, 0.4)
+    height: 20px
+ul
+  list-style: none
+  margin: 0px
+  padding: 0px
+  li
+   list-style-type: none
+   margin: 0px
+   padding: 0px

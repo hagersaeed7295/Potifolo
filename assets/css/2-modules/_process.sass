@@ -1,0 +1,92 @@
+.our-processs.page-section-ptb
+  width: 85%
+  margin: auto
+  margin-bottom: 70px
+.section-title-1
+ text-align: center
+ margin-bottom: 80px
+ margin-top: 50px
+.our-process
+  border-bottom: 1px dashed #e0e0e0
+  position: relative
+  height: 160px
+  &:before, &:after
+    content: "\f192"
+    position: absolute
+    left: -8px
+    bottom: -19px
+    font-family: 'FontAwesome'
+    font-size: 21px
+    color: #ccc
+
+.our-process-item:after
+  content: "\f192"
+  position: absolute
+  left: -8px
+  bottom: -4px
+  font-family: 'FontAwesome'
+  font-size: 16px
+  color: #ccc
+
+.our-process
+  &:after
+    left: auto
+    bottom: -15px
+    right: -8px
+    content: "\f140"
+  &.proc4level .our-process-item
+    width: 25%
+  &.proc5level .our-process-item
+    width: 20%
+  &.proc3level .our-process-item
+    width: 33.33%
+
+.our-process-item
+  height: 160px
+  float: left
+  position: relative
+  z-index: 1
+  &:before
+    width: 1px
+    background: #e5e5e5
+    height: 82px
+    float: left
+    position: absolute
+    bottom: 0
+    left: 41px
+    content: ""
+    z-index: 0
+  &:after
+    bottom: -10px
+    left: 60%
+    content: "\f054"
+    font-size: 10px
+    background: none
+  .our-process-content
+    position: absolute
+    left: 85px
+    overflow: hidden
+  i
+    width: 80px
+    height: 80px
+    color: #7d7d86
+    text-align: center
+    font-size: 32px
+    float: left
+    padding: 20px
+    border-radius: 39px
+    border: 3px solid #e5e5e5
+    -webkit-transition: all 0.2s ease
+    -moz-transition: all 0.2s ease
+    -ms-transition: all 0.2s ease
+    -o-transition: all 0.2s ease
+    transition: all 0.2s ease
+    z-index: 1
+  &:hover i
+    background: $basic-red-color
+    color: #fff
+    border-color: $basic-red-color
+  h5
+    font-weight: 400
+    font-size: 17px
+    margin: 16px 10px 8px 0
